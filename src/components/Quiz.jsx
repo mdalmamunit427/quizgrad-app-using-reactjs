@@ -35,18 +35,19 @@ const Quiz = () => {
 
     // Set up the timer interval
     const intervalId = setInterval(() => {
-      setTimer((prevTimer) => prevTimer - 1);
+      setTimer((prevTimer) => {
+        // Check if the timer is greater than 0 before decrementing
+        return prevTimer > 0 ? prevTimer - 1 : prevTimer;
+      });
     }, 1000);
-
    
     setTimerIntervalId(intervalId);
 
     
     return () => {
       clearInterval(intervalId);
-     
-      if (timer === 0) {
-        // Handle the case when the timer reaches 0
+      if (timer <= 0) {
+        setShowResult(true);
       }
     };
   }, [timer]);
