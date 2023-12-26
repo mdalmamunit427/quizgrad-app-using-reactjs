@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "question": "What is the purpose of HTML in web development?",
+      "options": [
+        "Styling web pages",
+        "Defining data structures",
+        "Programming server-side logic",
+        "Creating the structure of web pages"
+      ],
+      "answer": "Creating the structure of web pages",
+      "description": "HTML (Hypertext Markup Language) is the standard markup language for creating the structure of web pages. It defines the elements and their arrangement, allowing browsers to interpret and display content on the internet."
+    },
+    {
+      "id": 2,
+      "question": "What does CSS stand for in web development?",
+      "options": [
+        "Computer Style Sheets",
+        "Creative Style System",
+        "Cascading Style Sheets",
+        "Colorful Style Scripts"
+      ],
+      "answer": "Cascading Style Sheets",
+      "description": "CSS (Cascading Style Sheets) is a style sheet language used for describing the look and formatting of a document written in HTML. It controls the presentation, layout, and design of web pages, including aspects such as colors, fonts, and spacing."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is a popular front-end JavaScript framework?",
+      "options": [
+        "Express.js",
+        "Vue.js",
+        "Django",
+        "Flask"
+      ],
+      "answer": "Vue.js",
+      "description": "Vue.js is a progressive JavaScript framework used for building user interfaces. It is commonly used on the front end to create dynamic and reactive web applications. Vue.js is known for its simplicity and flexibility."
+    },
+    {
+      "id": 4,
+      "question": "What is the purpose of a web server in web development?",
+      "options": [
+        "Managing databases",
+        "Rendering user interfaces",
+        "Storing client-side scripts",
+        "Handling HTTP requests and responses"
+      ],
+      "answer": "Handling HTTP requests and responses",
+      "description": "A web server is a software or hardware component that handles HTTP (Hypertext Transfer Protocol) requests and responses. It serves web pages to clients, manages communication between clients and servers, and facilitates the processing of dynamic content."
+    },
+    {
+      "id": 5,
+      "question": "What is the role of AJAX in web development?",
+      "options": [
+        "Asynchronous JavaScript and XML",
+        "Advanced JSON and XML",
+        "Automated JavaScript and XHTML",
+        "Asynchronous JSON and XHTML"
+      ],
+      "answer": "Asynchronous JavaScript and XML",
+      "description": "AJAX (Asynchronous JavaScript and XML) is a set of web development techniques used to create asynchronous web applications. It allows data to be retrieved from a server asynchronously in the background, enabling dynamic and responsive user interfaces."
+    },
+    {
+      "id": 6,
+      "question": "What does the term 'responsive design' refer to in web development?",
+      "options": [
+        "Designing visually appealing websites",
+        "Creating mobile applications",
+        "Designing websites that adapt to different screen sizes",
+        "Implementing secure server configurations"
+      ],
+      "answer": "Designing websites that adapt to different screen sizes",
+      "description": "Responsive design in web development refers to the practice of creating websites that can adapt and provide an optimal viewing experience across various devices and screen sizes, including desktops, tablets, and mobile phones."
+    }
+  ]
