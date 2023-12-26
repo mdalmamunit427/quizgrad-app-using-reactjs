@@ -25,6 +25,7 @@ const Quiz = () => {
   const [loading, setLoading] = useState(false);
   const [timer, setTimer] = useState(60); 
   const [timerIntervalId, setTimerIntervalId] = useState(null);
+  const [status, setStatus] = useState("");
 
   useEffect(() => {
     fetch("/quiz.json")
@@ -66,9 +67,13 @@ const Quiz = () => {
     setTimeout(() => {
       const quizScore = calculateScore(answers);
       setScore(quizScore);
+      const percentage = (quizScore / questions.length) * 100;
+      // Determine the status based on the percentage
+      const newStatus = percentage >= 50 ? "Passed" : "Failed";
+      setStatus(newStatus);
+
       setShowResult(true);
       setLoading(false);
-      window.scrollTo({ top: 0, behavior: "smooth" });
     }, 5000);
   };
 
@@ -139,7 +144,9 @@ const Quiz = () => {
             <div>
               <h3 className="text-2xl font-medium">Your Score: </h3>
               <div className="h-[220px] w-[220px] mx-auto mt-8 flex flex-col justify-center items-center border-2 rounded-tr-[50%] rounded-bl-[50%]">
-                <h3 className="text-xl text-green-800">Passed</h3>
+              <h3 className={`text-xl ${status === "Passed" ? "text-green-800" : "text-red-500"}`}>
+              {status}
+            </h3>
                 <h1 className="text-3xl font-bold my-2">
                   {score * 10}
                   <span className="text-slate-800">/60</span>
