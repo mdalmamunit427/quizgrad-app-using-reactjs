@@ -23,8 +23,8 @@ const Quiz = () => {
   const [showResult, setShowResult] = useState(false);
   const [score, setScore] = useState(0);
   const [loading, setLoading] = useState(false);
-  const [timer, setTimer] = useState(60); // Initial timer value in seconds
-  const [timerIntervalId, setTimerIntervalId] = useState(null); // New state to store the timer interval ID
+  const [timer, setTimer] = useState(60); 
+  const [timerIntervalId, setTimerIntervalId] = useState(null);
 
   useEffect(() => {
     fetch("/quiz.json")
@@ -141,7 +141,7 @@ const Quiz = () => {
               <div className="h-[220px] w-[220px] mx-auto mt-8 flex flex-col justify-center items-center border-2 rounded-tr-[50%] rounded-bl-[50%]">
                 <h3 className="text-xl text-green-800">Passed</h3>
                 <h1 className="text-3xl font-bold my-2">
-                  {score}
+                  {score * 10}
                   <span className="text-slate-800">/60</span>
                 </h1>
                 <p className="text-sm flex justify-center items-center gap-2">
